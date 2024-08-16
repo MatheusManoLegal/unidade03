@@ -1,5 +1,8 @@
 describe('template spec', () => {
   it('passes', () => {
-    cy.visit('localhost:3000')
+    beforeEach( () => {
+			cy.visit('http://localhost:3000/')
+		})
   })
+  cy.getByData('titulo-principal')  
 })
